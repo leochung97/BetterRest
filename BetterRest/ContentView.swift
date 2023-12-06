@@ -13,10 +13,11 @@ struct ContentView: View {
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     @State private var showingAlert = false
+    
+    let cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
     // Without static, this would fail to compile as we are accessing one property from inside another
     // You need static to know that defaultWakeTime belongs to the ContentView struct itself rather than a single instance of the struct -> this means defaultWakeTime can be read whenever we want
-    
     static var defaultWakeTime: Date {
         var components = DateComponents()
         components.hour = 7
@@ -45,10 +46,14 @@ struct ContentView: View {
                 
                 Section("Daily coffee intake") {
                     // We can tell SwiftUI that the word cup needs to be "inflected" to match whatever is in the coffeeAmount variable -> this will automatically convert cup to cups if appropriate
-                    Stepper("^[\(coffeeAmount) cup](inflect: true)", value: $coffeeAmount, in: 1...20)
+                    // Stepper("^[\(coffeeAmount) cup](inflect: true)", value: $coffeeAmount, in: 1...20)
+                    Picker("^[\(coffeeAmount) cup](inflect: true)", selection: $coffeeAmount) {
+                        ForEach(cups, id: \.self) { cup in
+                            Text("\(cup)").tag(cup)
+                        }q
+                    }
                 }
                 .font(.headline)
-                
             }
             .navigationTitle("BetterRest")
             .toolbar {

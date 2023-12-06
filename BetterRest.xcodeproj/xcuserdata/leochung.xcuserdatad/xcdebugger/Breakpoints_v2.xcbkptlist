@@ -14,10 +14,42 @@
             filePath = "BetterRest/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "653A8821-B09A-4436-8752-EAE022FCD19C - 73aa1c67d4db0ca8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BetterRest.ContentView.defaultWakeTime.getter : Foundation.Date"
+                  moduleName = "BetterRest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leochung/Desktop/BetterRest/BetterRest/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "653A8821-B09A-4436-8752-EAE022FCD19C - ced0c4c09bc199af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BetterRest.ContentView.body.getter : some"
+                  moduleName = "BetterRest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leochung/Desktop/BetterRest/BetterRest/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
